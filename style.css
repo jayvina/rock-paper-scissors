@@ -12,7 +12,8 @@ body {
 }
 p {
   font-family: "Times New Roman", Times, serif;
-  font-size: 29px;
+  font-size: 19px;
+  margin: 10px;
   justify-content: center;
   text-align: center;
   display: flex;
@@ -20,7 +21,7 @@ p {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 80px;
   color: #fffffd;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -48,13 +49,13 @@ h1 {
 }
 
 .move-icon {
-  height: 100px;
+  height: 75px;
   margin: 20px;
   cursor: pointer;
 }
 
 .move-iconnn {
-  height: 60px;
+  height: 45px;
   margin: 10px;
 }
 
@@ -62,10 +63,11 @@ h1 {
   background-color: rgb(253, 253, 252);
   margin-right: 10px;
   border-radius: 100px;
+  margin-bottom: 20px;
 }
 
 .move-iconn {
-  height: 100px;
+  height: 70px;
   transform: rotate(280deg);
   margin: 20px;
 }
@@ -78,5 +80,4 @@ h1 {
   border-radius: 14px;
   border: 2px solid rgb(37, 37, 37);
   cursor: pointer;
-  
 }
