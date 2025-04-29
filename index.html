@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Rock Paper Scissors</h1>
+      <button
+        onclick="
+    playGame('Rock');
+    "
+        class="move-button"
+      >
+        <img src="img/hand.png" class="move-icon" />
+      </button>
+
+      <button
+        onclick="
+    playGame('Paper');
+    "
+        class="move-button"
+      >
+        <img src="img/hand-paper.png" class="move-icon" />
+      </button>
+
+      <button
+        onclick="
+    playGame('Scissors');
+    "
+        class="move-button"
+      >
+        <img src="img/scissors.png" class="move-iconn" />
+      </button>
+
+      <p class="js-result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score"></p>
+
+      <button
+        onclick="
+     score.wins = 0;
+     score.losses = 0;
+     score.ties = 0;
+     localStorage.removeItem('score');
+     updateScoreElement();
+     "
+        class="reset-btn"
+      >
+        Reset Score
+      </button>
+    </div>
+    <!--Steps: 1. Computer randomly selects a move 2. Compare the moves to get the
+    result 4. Update the score 3. Display the result -->
+  </body>
+  <script src="script.js"></script>
+</html>
